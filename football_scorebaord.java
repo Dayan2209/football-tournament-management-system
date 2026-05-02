@@ -37,9 +37,9 @@ class football_scorebaord
             for(int j=i+1;j<n;j++)
             {
                 System.out.println(teams[i] +" vs "+ teams[j]);
-                System.out.println("enter score of "+teams[i]);
+                System.out.println("enter goals scored by team "+teams[i]);
                 int score1=sc.nextInt();
-                System.out.println("enter score of "+teams[j]);
+                System.out.println("enter goals scored by team "+teams[j]);
                 int score2=sc.nextInt();
                 matches[i]++;
                 matches[j]++;
