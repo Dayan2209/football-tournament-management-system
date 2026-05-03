@@ -1,11 +1,11 @@
 # Football Tournament Management System (Java)
 
-This project is a Java-based program that simulates a football tournament. It supports both **Round Robin** and **Knockout** formats, allowing users to choose how the tournament is conducted.
+This project is a Java based program that simulates a football tournament which supports both **Round Robin** and **Knockout** formats allowing users to choose how the tournament is conducted.
 
 
 ## Overview
 
-The system takes team names as input and manages the entire tournament flow — from match generation to final results. It calculates scores, tracks team performance, and displays results in a structured leaderboard.
+The system takes team names as input and manages the entire tournament flow  from match generation to final results. It calculates scores,tracks team performance and displays results in a structured leaderboard.
 
 
 ## Features
@@ -26,7 +26,7 @@ The system takes team names as input and manages the entire tournament flow — 
   - Goal Difference (GD)  
 - Leaderboard ranking based on:
   1. Total points  
-  2. Goal difference (tiebreaker)  
+  2. Goal difference (tiebreaker if points are equal)  
 - Displays round-by-round progression in knockout mode
 
 
@@ -34,13 +34,11 @@ The system takes team names as input and manages the entire tournament flow — 
 
 After entering the number of teams and their names, the user selects the tournament format.
 
-
 ### Round Robin
-Each team plays every other team once. Scores are entered for each match, and the system updates all statistics. Teams are then ranked based on points and goal difference.
-
+Each team plays every other team once. Scores are entered for each match and the system updates all statistics. Teams are then ranked based on points and if points are equal then goal difference is considered.
 
 ### Knockout
-Teams are paired for each round. Winners move on to the next round, and the process repeats until one final winner remains.
+Teams are paired for each round. Winners move on to the next round and the process repeats until one final winner remains.
 
 
 ## Concepts Used
