@@ -1,5 +1,5 @@
 import java.util.*;
-class football_scorebaord
+class football_scoreboard
 {
     public static void main()
     {
