@@ -1,87 +1,70 @@
-# Football Tournament Management System
-This project is a Java-based system that simulates a football-style tournament where each team plays every other team.
+# Football Tournament Management System (Java)
+
+This project is a Java-based program that simulates a football tournament. It supports both **Round Robin** and **Knockout** formats, allowing users to choose how the tournament is conducted.
+
+
+## Overview
+
+The system takes team names as input and manages the entire tournament flow — from match generation to final results. It calculates scores, tracks team performance, and displays results in a structured leaderboard.
 
 
 ## Features
-- Automatic match generation using nested loops
-- Score input for each match
-- Points calculation (Win: 3, Draw: 1, Loss: 0)
-- Leaderboard ranking system
-- Goal Difference (GD) used as a tiebreaker
-- Tracks wins, losses, draws, goals scored (GF) and goals conceded (GA)
+
+- Supports two formats:
+  - **Round Robin** (each team plays every other team)
+  - **Knockout** (loser is eliminated each round)
+- Automatic match generation
+- User input for match scores
+- Points system:
+  - Win: 3 points  
+  - Draw: 1 point  
+  - Loss: 0 points  
+- Tracks:
+  - Matches played  
+  - Wins, losses, draws  
+  - Goals scored (GF) and conceded (GA)  
+  - Goal Difference (GD)  
+- Leaderboard ranking based on:
+  1. Total points  
+  2. Goal difference (tiebreaker)  
+- Displays round-by-round progression in knockout mode
 
 
 ## How It Works
-The program takes team names as input and generates fixtures such that each team plays every other team once.
-For each match, the user enters scores, and the system updates:
-- Matches played
-- Points
-- Wins, losses, and draws
-- Goals scored and conceded
 
-After all matches are completed, teams are sorted based on:
-1. Total points
-2. Goal difference (if points are equal)
+After entering the number of teams and their names, the user selects the tournament format.
 
-The final leaderboard is displayed with full team statistics.
+
+### Round Robin
+Each team plays every other team once. Scores are entered for each match, and the system updates all statistics. Teams are then ranked based on points and goal difference.
+
+
+### Knockout
+Teams are paired for each round. Winners move on to the next round, and the process repeats until one final winner remains.
 
 
 ## Concepts Used
-- Arrays
-- Nested loops
-- Conditional statements
-- Sorting (Bubble Sort)
-- Basic data handling
+
+- Arrays for data storage  
+- Nested loops for match generation  
+- Conditional logic for match results  
+- Sorting (Bubble Sort) for leaderboard ranking  
+- Basic control structures (if-else, switch)
+
+
+## Notes
+
+- Knockout mode requires an even number of teams  
+- Draws are not allowed in knockout matches
 
 
 ## How to Run
-1. Compile the program using a Java compiler
+
+1. Compile the program in a java compiler
 2. Run the main class
-3. Enter team names and match scores as prompted
+3. Enter team details and follow prompts
 
-
-## Sample Output
-Example:
-
-enter number of teams
-3
-enter team names
-Barcelona
-Liverpool
-Frankfurt
-Barcelona vs Liverpool
-enter goals scored by team Barcelona
-5
-enter goals scored by team Liverpool
-3
-winner of the match is team Barcelona
-
-Barcelona vs Frankfurt
-enter goals scored by team Barcelona
-3
-enter goals scored by team Frankfurt
-0
-winner of the match is team Barcelona
-
-Liverpool vs Frankfurt
-enter goals scored by team Liverpool
-4
-enter goals scored by team Frankfurt
-2
-winner of the match is team Liverpool
-
-
-                                        SCOREBOARD
-1. Team Barcelona      Matches : 2  Wins : 2  Losses : 0  Draws : 0  G/F : 8  G/A : 3  G/D : 5  Points : 6
-2. Team Liverpool      Matches : 2  Wins : 1  Losses : 1  Draws : 0  G/F : 7  G/A : 7  G/D : 0  Points : 3
-3. Team Frankfurt      Matches : 2  Wins : 0  Losses : 2  Draws : 0  G/F : 2  G/A : 7  G/D : -5  Points : 0
-
-
-
-## Future Improvements
-- Add graphical user interface (GUI)
-- Store data using files
-- Support knockout tournaments
 
 ## Author
+
 Md.Dayan Anjum
