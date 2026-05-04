@@ -1,68 +1,82 @@
 # Football Tournament Management System (Java)
 
-This project is a Java based program that simulates a football tournament which supports both **Round Robin** and **Knockout** formats allowing users to choose how the tournament is conducted.
-
+This is a Java program that simulates a football tournament
+It supports both **Round Robin** and **Knockout** formats so you can choose how the tournament runs
 
 ## Overview
 
-The system takes team names as input and manages the entire tournament flow  from match generation to final results. It calculates scores,tracks team performance and displays results in a structured leaderboard.
+The program takes team names as input and manages the full tournament flow
+from generating matches to giving final results
 
+It keeps track of scores updates team stats and shows a clear leaderboard
 
 ## Features
 
-- Supports two formats:
-  - **Round Robin** (each team plays every other team)
-  - **Knockout** (loser is eliminated each round)
-- Automatic match generation
-- User input for match scores
-- Points system:
-  - Win: 3 points  
-  - Draw: 1 point  
-  - Loss: 0 points  
-- Tracks:
-  - Matches played  
-  - Wins, losses, draws  
-  - Goals scored (GF) and conceded (GA)  
-  - Goal Difference (GD)  
-- Leaderboard ranking based on:
-  1. Total points  
-  2. Goal difference (tiebreaker if points are equal)  
-- Displays round-by-round progression in knockout mode
+* Supports two formats
 
+  * **Round Robin** each team plays every other team
+  * **Knockout** loser gets eliminated each round
+
+* Automatic match generation
+
+* User input for match scores
+
+* Points system
+
+  * Win 3 points
+  * Draw 1 point
+  * Loss 0 points
+
+* Tracks
+
+  * Matches played
+  * Wins losses draws
+  * Goals scored GF and conceded GA
+  * Goal Difference GD
+
+* Leaderboard ranking based on
+
+  1. Total points
+  2. Goal difference if points are equal
+
+* Shows round by round progress in knockout mode
 
 ## How It Works
 
-After entering the number of teams and their names, the user selects the tournament format.
+Enter number of teams and team names
+Then choose the tournament format
 
 ### Round Robin
-Each team plays every other team once. Scores are entered for each match and the system updates all statistics. Teams are then ranked based on points and if points are equal then goal difference is considered.
+
+Each team plays every other team once
+You enter match scores and the system updates all stats
+Teams are ranked based on points and then goal difference
 
 ### Knockout
-Teams are paired for each round. Winners move on to the next round and the process repeats until one final winner remains.
 
+Teams are paired each round
+Winners move forward
+This continues until one team wins the tournament
 
 ## Concepts Used
 
-- Arrays for data storage  
-- Nested loops for match generation  
-- Conditional logic for match results  
-- Sorting (Bubble Sort) for leaderboard ranking  
-- Basic control structures (if-else, switch)
-
+* Arrays for storing data
+* Nested loops for generating matches
+* Conditional logic for results
+* Sorting using bubble sort for rankings
+* Basic control structures like if else and switch
 
 ## Notes
 
-- Knockout mode requires an even number of teams  
-- Draws are not allowed in knockout matches
-
+* Knockout mode needs number of teams as a power of 2
+* Draws are not allowed in knockout matches
 
 ## How to Run
 
-1. Compile the program in a java compiler
+1. Compile the program
 2. Run the main class
 3. Enter team details and follow prompts
 
-
 ## Author
 
-Md.Dayan Anjum
+Md Dayan Anjum
